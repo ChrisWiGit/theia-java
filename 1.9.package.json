@@ -113,11 +113,12 @@
         "vscode-builtin-xml": "https://github.com/theia-ide/vscode-builtin-extensions/releases/download/v1.39.1-prel/xml-1.39.1-prel.vsix",
         "vscode-builtin-yaml": "https://github.com/theia-ide/vscode-builtin-extensions/releases/download/v1.39.1-prel/yaml-1.39.1-prel.vsix",
         "vscode-editorconfig": "https://github.com/theia-ide/editorconfig-vscode/releases/download/v0.14.4/EditorConfig-0.14.4.vsix",
-        "vscode-java-redhat": "https://github.com/redhat-developer/vscode-java/releases/download/v0.54.2/redhat.java-0.54.2.vsix",
-        "vscode-java-debug": "https://github.com/microsoft/vscode-java-debug/releases/download/0.24.0/vscjava.vscode-java-debug-0.24.0.vsix",
-        "vscode-java-test": "https://github.com/microsoft/vscode-java-test/releases/download/0.22.0/vscjava.vscode-java-test-0.22.0.vsix",
+        "vscode-java-redhat": "https://github.com/redhat-developer/vscode-java/releases/download/v0.61.0/redhat.java-0.61.0.vsix",        
+        "vscode-java-debug": "https://github.com/microsoft/vscode-java-debug/releases/download/0.30.0/vscjava.vscode-java-debug-0.30.0.vsix",
+        "vscode-java-test": "https://github.com/microsoft/vscode-java-test/releases/download/0.27.0/vscjava.vscode-java-test-0.27.0.vsix",        
         "vscode-java-dependency-viewer": "https://github.com/microsoft/vscode-java-dependency/releases/download/0.6.0/vscode-java-dependency-0.6.0.vsix",
-        "richardwillis.vscode-gradle": "https://open-vsx.org/api/richardwillis/vscode-gradle/3.5.2/file/richardwillis.vscode-gradle-3.5.2.vsix"
+        "richardwillis.vscode-gradle": "https://open-vsx.org/api/richardwillis/vscode-gradle/3.5.2/file/richardwillis.vscode-gradle-3.5.2.vsix",
+        "redhat.vscode-yaml": "https://open-vsx.org/api/redhat/vscode-yaml/0.14.0/file/redhat.vscode-yaml-0.14.0.vsix"
     },
     "resolutions": {
         "vscode-json-languageserver": "1.2.2",
