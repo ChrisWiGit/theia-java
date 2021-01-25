@@ -23,6 +23,19 @@ Some _fixes_ were also applied
 * increased `max_user_watches`for system file watchers on large projects
 * JavaJDK resides in `/usr/local/openjdk` instead of with added version postfix.
 
+### Current drawbacks
+
+* The release version `0.29.0` or newer of the Theia extenension Java Debug does not work with remote debugging (i.e. attach configuration in launch.js). Version `0.28.0` works for me. This version is set within the `1.9.package.json` file.
+
+```
+root ERROR Error starting the debug session Error: It is not possible to provide debug adapter executable.        
+    at DebugExtImpl.<anonymous> (/home/theia/node_modules/@theia/plugin-ext/lib/plugin/node/debug/debug.js:709:39)
+    at step (/home/theia/node_modules/@theia/plugin-ext/lib/plugin/node/debug/debug.js:33:23)
+    at Object.next (/home/theia/node_modules/@theia/plugin-ext/lib/plugin/node/debug/debug.js:14:53)
+    at fulfilled (/home/theia/node_modules/@theia/plugin-ext/lib/plugin/node/debug/debug.js:5:58)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+```
+
 ## Features
 * Based on https://github.com/theia-ide/theia-apps/tree/master/theia-java-docker (link broken)
 * The Java used is OpenJDK version instead of IBM one.
