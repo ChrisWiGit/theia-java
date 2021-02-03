@@ -33,15 +33,15 @@ RUN adduser --disabled-password --gecos '' theia && \
 
 # Default known locations
 ENV USER_HOME=/home/theia \
-    WORKSPACES_HOME=/home/workspaces
+    WORKSPACE_HOME=/home/workspace
 
 # set permissions
 # set maximum watchers for theia
 RUN chmod g+rw /home && \
-    mkdir -p $WORKSPACES_HOME && \
+    mkdir -p $WORKSPACE_HOME && \
     mkdir -p $USER_HOME/.theia && \
     chown -R theia:theia $USER_HOME && \
-    chown -R theia:theia $WORKSPACES_HOME
+    chown -R theia:theia $WORKSPACE_HOME
     
 USER theia
 WORKDIR /home/theia
@@ -49,9 +49,15 @@ WORKDIR /home/theia
 # use specific 1.9 version of theia modules
 #ADD next.package.json ./package.json
 ADD 1.9.package.json ./package.json
+# add all vsix files. don't forget to unzip them below!
+ADD plugins/*.vsix .
+
 RUN yarn --cache-folder ./ycache && rm -rf ./ycache && \
     NODE_OPTIONS="--max_old_space_size=4096" yarn theia build && \
-    yarn theia download:plugins && \
+    yarn theia download:plugins
+
+# special handling of this vsix file.
+RUN unzip -q vscode-gradle-3.5.2_vsixhub.com.vsix -d plugins && \
     dos2unix $USER_HOME/plugins/vscode-java-redhat/extension/schemas/package.schema.json
 
 # init entry point

@@ -117,7 +117,6 @@
         "vscode-java-debug": "https://github.com/microsoft/vscode-java-debug/releases/download/0.28.0/vscjava.vscode-java-debug-0.28.0.vsix",
         "vscode-java-test": "https://github.com/microsoft/vscode-java-test/releases/download/0.27.0/vscjava.vscode-java-test-0.27.0.vsix",        
         "vscode-java-dependency-viewer": "https://github.com/microsoft/vscode-java-dependency/releases/download/0.6.0/vscode-java-dependency-0.6.0.vsix",
-        "richardwillis.vscode-gradle": "https://open-vsx.org/api/richardwillis/vscode-gradle/3.5.2/file/richardwillis.vscode-gradle-3.5.2.vsix",
         "redhat.vscode-yaml": "https://open-vsx.org/api/redhat/vscode-yaml/0.14.0/file/redhat.vscode-yaml-0.14.0.vsix"
     },
     "resolutions": {
